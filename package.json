@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"app/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"app/**/*.{js,jsx,ts,tsx}\"",
+    "ddd": "yarn dlx @yarnpkg/sdks vscode"
   },
   "dependencies": {
+    "firebase": "^10.13.1",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18"
@@ -19,6 +22,9 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
     "typescript": "^5"
   },
   "packageManager": "yarn@4.4.1"
