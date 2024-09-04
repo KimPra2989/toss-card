@@ -11,12 +11,15 @@
     "ddd": "yarn dlx @yarnpkg/sdks vscode"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "firebase": "^10.13.1",
-    "next": "14.2.7",
+    "next": "^14.2.7",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.12.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
