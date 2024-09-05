@@ -3,7 +3,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Global } from '@emotion/react'
-import globalStyles from '../styles/globalStyles'
+import globalStyles from '@/styles/globalStyles'
 
 // export const metadata: Metadata = {
 //   title: 'Create Next App',

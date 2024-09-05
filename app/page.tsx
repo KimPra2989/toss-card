@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { css } from '@emotion/react'
-import { colors } from '../styles/colorPalette'
+import { colors } from '@/styles/colorPalette'
 
 const ContainerStyles = css`
   color: ${colors.blue};
