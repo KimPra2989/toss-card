@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "eslint \"app/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"app/**/*.{js,jsx,ts,tsx}\"",
-    "ddd": "yarn dlx @yarnpkg/sdks vscode"
+    "ddd": "yarn dlx @yarnpkg/sdks vscode",
+    "sb": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.12.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "firebase": "^10.13.1",
@@ -19,7 +22,16 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "1.8.0",
     "@emotion/babel-plugin": "^11.12.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/nextjs": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/test": "^8.2.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -27,8 +39,15 @@
     "eslint-config-next": "14.2.7",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-storybook": "^0.8.0",
     "prettier": "^3.3.3",
-    "typescript": "^5"
+    "storybook": "^8.2.9",
+    "typescript": "^5",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "installConfig": {
+    "pnp": true
   },
   "packageManager": "yarn@4.4.1"
 }
