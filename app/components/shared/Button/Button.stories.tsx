@@ -5,7 +5,6 @@ import { buttonSizeMap } from '@/styles/button'
 import { ComponentProps } from 'react'
 
 type ButtonProps = ComponentProps<typeof Button>
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta: Meta<ButtonProps> = {
   title: '공통/Button',
   component: Button,
@@ -13,7 +12,6 @@ const meta: Meta<ButtonProps> = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
     size: { control: 'radio', options: Object.keys(buttonSizeMap) },
   },
@@ -30,7 +28,6 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
   args: {
     color: 'primary',
