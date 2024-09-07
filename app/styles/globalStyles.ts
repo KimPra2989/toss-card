@@ -148,4 +148,7 @@ export default css`
     color: inherit;
     text-decoration: inherit;
   }
+  body {
+    min-height: 100vh;
+  }
 `
