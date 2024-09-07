@@ -40,6 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@storybook/nextjs", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:8.2.9"],\
           ["@storybook/react", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:8.2.9"],\
           ["@storybook/test", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:8.2.9"],\
+          ["@tanstack/react-query", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.55.0"],\
           ["@types/node", "npm:20.16.4"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
@@ -6179,6 +6180,38 @@ const RAW_RUNTIME_STATE =
           ["@swc/helpers", "npm:0.5.5"],\
           ["@swc/counter", "npm:0.1.3"],\
           ["tslib", "npm:2.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@tanstack/query-core", [\
+      ["npm:5.54.1", {\
+        "packageLocation": "../../../Users/strho/AppData/Local/Yarn/Berry/cache/@tanstack-query-core-npm-5.54.1-b8b8db5af2-10c0.zip/node_modules/@tanstack/query-core/",\
+        "packageDependencies": [\
+          ["@tanstack/query-core", "npm:5.54.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@tanstack/react-query", [\
+      ["npm:5.55.0", {\
+        "packageLocation": "../../../Users/strho/AppData/Local/Yarn/Berry/cache/@tanstack-react-query-npm-5.55.0-85a73181d5-10c0.zip/node_modules/@tanstack/react-query/",\
+        "packageDependencies": [\
+          ["@tanstack/react-query", "npm:5.55.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.55.0", {\
+        "packageLocation": "./.yarn/__virtual__/@tanstack-react-query-virtual-bd5033702a/4/Users/strho/AppData/Local/Yarn/Berry/cache/@tanstack-react-query-npm-5.55.0-85a73181d5-10c0.zip/node_modules/@tanstack/react-query/",\
+        "packageDependencies": [\
+          ["@tanstack/react-query", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.55.0"],\
+          ["@tanstack/query-core", "npm:5.54.1"],\
+          ["@types/react", "npm:18.3.5"],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16066,6 +16099,7 @@ const RAW_RUNTIME_STATE =
           ["@storybook/nextjs", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:8.2.9"],\
           ["@storybook/react", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:8.2.9"],\
           ["@storybook/test", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:8.2.9"],\
+          ["@tanstack/react-query", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.55.0"],\
           ["@types/node", "npm:20.16.4"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
