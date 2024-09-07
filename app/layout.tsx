@@ -1,7 +1,6 @@
 'use client'
 
 import type { Metadata } from 'next'
-import './globals.css'
 import { Global } from '@emotion/react'
 import globalStyles from '@/styles/globalStyles'
 
