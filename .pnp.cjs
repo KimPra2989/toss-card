@@ -55,6 +55,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:18.3.1"],\
           ["storybook", "npm:8.2.9"],\
+          ["swiper", "npm:11.1.12"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
           ["webpack", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.94.0"],\
           ["webpack-cli", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.1.4"]\
@@ -15857,6 +15858,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["swiper", [\
+      ["npm:11.1.12", {\
+        "packageLocation": "../../../Users/strho/AppData/Local/Yarn/Berry/cache/swiper-npm-11.1.12-9358b8d432-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:11.1.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["synckit", [\
       ["npm:0.9.1", {\
         "packageLocation": "../../../Users/strho/AppData/Local/Yarn/Berry/cache/synckit-npm-0.9.1-2153077746-10c0.zip/node_modules/synckit/",\
@@ -16114,6 +16124,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:18.3.1"],\
           ["storybook", "npm:8.2.9"],\
+          ["swiper", "npm:11.1.12"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
           ["webpack", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.94.0"],\
           ["webpack-cli", "virtual:5eaf0bf004ea007b759c2552eb4048ae4561273d3c41d82d7f9c006f52bd1a98aec278c8f805eaa2dd99e7064ca8ad21ddff20081a148bb400722e30c0184fc6#npm:5.1.4"]\
