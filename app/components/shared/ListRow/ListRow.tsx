@@ -5,19 +5,17 @@ import Flex from '../Flex/Flex'
 import { Text } from '../Text/Text'
 
 interface ListRowProps {
-  left?: ReactNode
   contents: ReactNode
   right?: ReactNode
   withArrow?: boolean
   onClick?: () => void
 }
 
-function ListRow({ left, contents, right, withArrow, onClick }: ListRowProps) {
+function ListRow({ contents, right, withArrow, onClick }: ListRowProps) {
   return (
     <Flex as="li" css={listRowContainerStyles} onClick={onClick} align="center">
-      {/* <Flex css={listRowLeftStyles}>{left}</Flex> */}
       <Flex css={listRowContentsStyles}>{contents}</Flex>
-      <Flex>{right}</Flex>
+      <Flex css={listRowRightStyles}>{right}</Flex>
       {withArrow ? <ArrowRightIcon /> : null}
     </Flex>
   )
@@ -27,12 +25,12 @@ const listRowContainerStyles = css`
   padding: 8px 24px;
 `
 
-const listRowLeftStyles = css`
-  margin-right: 14px;
-`
-
 const listRowContentsStyles = css`
   flex: 1;
+`
+
+const listRowRightStyles = css`
+  margin-right: 16px;
 `
 
 function ListRowTexts({

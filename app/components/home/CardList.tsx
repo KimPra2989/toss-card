@@ -1,46 +1,55 @@
 import useCardListQuery from '@/hook/useCardListQuery'
-import { useRouter } from 'next/navigation'
+import useIntersectionObserver from '@/hook/useIntersectionObserver'
+import { css } from '@emotion/react'
+import Link from 'next/link'
+import { useCallback, useRef } from 'react'
+import Badge from '../shared/Badge/Badge'
 import ListRow from '../shared/ListRow/ListRow'
 
-function CardList() {
-  const router = useRouter()
+const loadMoreHeight = '50px'
 
+function CardList() {
   const { cards, hasNextPage, fetchNextPage, isFetching } = useCardListQuery()
 
-  // const loadMore = useCallback(() => {
-  //   if (hasNextPage === false || isFetching) {
-  //     return
-  //   }
-  //   return fetchNextPage()
-  // }, [fetchNextPage, hasNextPage, isFetching])
+  const loadMoreRef = useRef<HTMLDivElement>(null)
+
+  const loadMore = useCallback(() => {
+    if (hasNextPage && !isFetching) {
+      fetchNextPage()
+    }
+  }, [fetchNextPage, hasNextPage, isFetching])
+
+  useIntersectionObserver(loadMoreRef, loadMore)
 
   if (!cards) return null
 
   return (
-    <ul>
-      <button
-        onClick={() => {
-          fetchNextPage()
-        }}
-      >
-        다음 페이지
-      </button>
+    <ul css={position_relative}>
       {cards?.map((card, idx) => (
-        <ListRow
-          key={card.id}
-          left={<div>left</div>}
-          contents={
-            <ListRow.Texts title={`${idx + 1}위`} subTitle={card.name} />
-          }
-          right={card.payback ? <div>{card.payback}</div> : null}
-          withArrow={true}
-          onClick={() => {
-            router.push(`/card/${card.id}`)
-          }}
-        />
+        <Link href={`/card/${card.id}`} scroll={false} key={card.id}>
+          <ListRow
+            contents={
+              <ListRow.Texts title={`${idx + 1}위`} subTitle={card.name} />
+            }
+            right={card.payback && <Badge label={card.payback} />}
+            withArrow={true}
+          />
+        </Link>
       ))}
+      <div ref={loadMoreRef} css={intersectionChecker} />
     </ul>
   )
 }
+
+const position_relative = css`
+  position: relative;
+`
+const intersectionChecker = css`
+  position: absolute;
+  bottom: ${loadMoreHeight};
+  left: 0;
+  right: 0;
+  height: 0;
+`
 
 export default CardList
