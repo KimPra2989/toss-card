@@ -11,14 +11,6 @@ const useCardListQuery = () => {
     getNextPageParam: (snapshot) => snapshot?.lastVisible || null,
   })
 
-  console.log('data', data)
-  // const loadMore = useCallback(() => {
-  //   if (hasNextPage === false || isFetching) {
-  //     return
-  //   }
-  //   return fetchNextPage()
-  // }, [fetchNextPage, hasNextPage, isFetching])
-
   if (!data) return {}
 
   // data 한 배열로 묶기
