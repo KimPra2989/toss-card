@@ -149,6 +149,9 @@ export default css`
     text-decoration: inherit;
   }
   body {
+    max-width: 412px;
+    margin: 0 auto;
+    border: 1px solid;
     min-height: 100vh;
   }
 `
