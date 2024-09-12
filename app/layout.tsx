@@ -2,7 +2,7 @@
 
 import type { Metadata } from 'next'
 import { Global } from '@emotion/react'
-import globalStyles from '@/styles/globalStyles'
+import globalStyles from '@/shared/styles/globalStyles'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 // export const metadata: Metadata = {

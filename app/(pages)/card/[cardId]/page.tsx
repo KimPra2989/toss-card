@@ -1,12 +1,12 @@
 'use client'
 
-import BenefitList from '@/components/detail/BenefitList'
-import Promotion from '@/components/detail/Promotion'
-import FixedBottomButton from '@/components/shared/FixedBottomButton/FixedBottomButton'
-import Top from '@/components/shared/Top/Top'
-import { getCard } from '@/remote/getCards'
-import removeHtmlTags from '@/utils/removeHtmlTags'
+import BenefitList from '@/(pages)/card/ui/BenefitList'
+import Promotion from '@/(pages)/card/ui/Promotion'
+import FixedBottomButton from '@/shared/ui/FixedBottomButton/FixedBottomButton'
+import Top from '@/shared/ui/Top/Top'
+import removeHtmlTags from '@/shared/utils/removeHtmlTags'
 import { useQuery } from '@tanstack/react-query'
+import { getCard } from '../api/getCard'
 
 interface CardDetailProps {
   params: {

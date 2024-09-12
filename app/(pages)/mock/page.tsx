@@ -1,7 +1,7 @@
 'use client'
 
-import AdBannerButton from '@/mock/AdBannerButton'
-import CardAddButton from '@/mock/CardAddButton'
+import AdBannerButton from './api/AdBannerButton'
+import CardAddButton from './api/CardAddButton'
 
 export default function Mock() {
   return (
