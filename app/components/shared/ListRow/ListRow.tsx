@@ -24,7 +24,7 @@ function ListRow({
       <Flex css={listRowLeftStyles}>{left}</Flex>
       <Flex css={listRowContentsStyles}>{contents}</Flex>
       <Flex css={listRowRightStyles}>{right}</Flex>
-      {withArrow ? <ArrowRightIcon /> : null}
+      {withArrow && <ArrowRightIcon />}
     </Flex>
   )
 }
