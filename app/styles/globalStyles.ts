@@ -1,13 +1,11 @@
 import { css } from '@emotion/react'
 import { colorPalette } from './colorPalette'
+import variables from './variables'
 
 export default css`
   ${colorPalette}
 
-  :root {
-    --dimmed-zindex: 10;
-    --alert-zindex: 11;
-  }
+  ${variables}
 
   html,
   body,
@@ -148,7 +146,7 @@ export default css`
     color: inherit;
     text-decoration: inherit;
   }
-  body {
+  main {
     max-width: 412px;
     margin: 0 auto;
     border: 1px solid;
