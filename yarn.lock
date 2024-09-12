@@ -7408,6 +7408,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^11.5.4":
+  version: 11.5.4
+  resolution: "framer-motion@npm:11.5.4"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/2405aad0ed3cbd2ad6ab2dedec5146483feb8e67f6f3d16f38bfea23f0e31a4fad5f1660f307767a5e9c27b40c708b64c0ba65841824a38144e401f3bab31566
+  languageName: node
+  linkType: hard
+
 "fresh@npm:0.5.2":
   version: 0.5.2
   resolution: "fresh@npm:0.5.2"
@@ -12008,6 +12028,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.2.1"
     eslint-plugin-storybook: "npm:^0.8.0"
     firebase: "npm:^10.13.1"
+    framer-motion: "npm:^11.5.4"
     next: "npm:^14.2.7"
     prettier: "npm:^3.3.3"
     react: "npm:^18"

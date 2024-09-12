@@ -2,6 +2,7 @@ import { colors } from '@/styles/colorPalette'
 import { css, keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 import Button from '../Button/Button'
+import { motion } from 'framer-motion'
 
 interface FixedBottomButtonProps {
   label: string
@@ -10,7 +11,11 @@ interface FixedBottomButtonProps {
 
 function FixedBottomButton({ label, onClick }: FixedBottomButtonProps) {
   return (
-    <Container>
+    <Container
+      initial={{ translateY: '100%' }}
+      animate={{ translateY: 0 }}
+      transition={{ duration: 0.5, ease: 'easeInOut', delay: 0.7 }}
+    >
       <Button size="medium" full={true} onClick={onClick} css={buttonStyles}>
         {label}
       </Button>
@@ -18,7 +23,7 @@ function FixedBottomButton({ label, onClick }: FixedBottomButtonProps) {
   )
 }
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   position: fixed;
   left: 0;
   right: 0;

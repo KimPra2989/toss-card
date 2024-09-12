@@ -1,7 +1,8 @@
 import styled from '@emotion/styled'
+import { MotionProps } from 'framer-motion'
 import { CSSProperties } from 'react'
 
-interface FlexProps {
+interface FlexProps extends MotionProps {
   align?: CSSProperties['alignItems']
   justify?: CSSProperties['justifyContent']
   direction?: CSSProperties['flexDirection']
