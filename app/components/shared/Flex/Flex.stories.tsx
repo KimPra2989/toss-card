@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { ComponentProps } from 'react'
-import Flex from './Flex'
+import { ComponentProps, ReactNode } from 'react'
+import Flex, { FlexBaseProps } from './Flex'
 
-type FlexProps = ComponentProps<typeof Flex>
-const meta: Meta<FlexProps> = {
+const meta: Meta<FlexBaseProps & { children: ReactNode }> = {
   title: '공통/Flex',
   component: Flex,
   parameters: {
